@@ -466,7 +466,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       height: 32px;
       padding: 0 16px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #ff9d00;
       box-shadow: none;
     }
 

@@ -310,7 +310,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c68 {
-  color: #1FC7D4;
+  color: #ff9d00;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -318,7 +318,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c72 {
-  color: #1FC7D4;
+  color: #ff9d00;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -762,7 +762,7 @@ exports[`renders correctly 1`] = `
   font-size: 12px;
   padding: 0 8px;
   background-color: transparent;
-  color: #1FC7D4;
+  color: #ff9d00;
   box-shadow: none;
 }
 
@@ -819,7 +819,7 @@ exports[`renders correctly 1`] = `
   height: 48px;
   padding: 0 24px;
   background-color: transparent;
-  color: #1FC7D4;
+  color: #ff9d00;
   box-shadow: none;
   width: sm;
   height: sm;
@@ -878,7 +878,7 @@ exports[`renders correctly 1`] = `
   height: 48px;
   padding: 0 24px;
   background-color: transparent;
-  color: #1FC7D4;
+  color: #ff9d00;
   box-shadow: none;
 }
 
@@ -934,7 +934,7 @@ exports[`renders correctly 1`] = `
   transition: background-color 0.2s,opacity 0.2s;
   height: 32px;
   padding: 0 16px;
-  background-color: #1FC7D4;
+  background-color: #ff9d00;
   color: white;
 }
 
@@ -1458,7 +1458,7 @@ exports[`renders correctly 1`] = `
                 color="text"
                 viewBox="0 0 198 199"
                 width="20px"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns=""
               >
                 <path
                   clip-rule="evenodd"
@@ -1862,7 +1862,7 @@ exports[`renders correctly 1`] = `
                     />
                     <stop
                       offset="1"
-                      stop-color="#1FC7D4"
+                      stop-color="#ff9d00"
                     />
                   </lineargradient>
                 </defs>
@@ -3037,7 +3037,7 @@ exports[`renders correctly 1`] = `
                           />
                           <stop
                             offset="1"
-                            stop-color="#1FC7D4"
+                            stop-color="#ff9d00"
                           />
                         </lineargradient>
                       </defs>

@@ -18,68 +18,7 @@ import { perpLangMap } from 'utils/getPerpetualLanguageCode'
 export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 
 const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType[] = (t, languageCode) => [
-  {
-    label: t('Trade'),
-    icon: SwapIcon,
-    fillIcon: SwapFillIcon,
-    href: '/swap',
-    showItemsOnMobile: false,
-    items: [
-      {
-        label: t('Swap'),
-        href: '/swap',
-      },
-      {
-        label: t('Limit'),
-        href: '/limit-orders',
-      },
-      {
-        label: t('Liquidity'),
-        href: '/liquidity',
-      },
-      {
-        label: t('Perpetual'),
-        href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT`,
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
-  },
-  {
-    label: t('Earn'),
-    href: '/farms',
-    icon: EarnIcon,
-    fillIcon: EarnFillIcon,
-    items: [
-      {
-        label: t('Farms'),
-        href: '/farms',
-      },
-      {
-        label: t('Pools'),
-        href: '/pools',
-      },
-    ],
-  },
-  {
-    label: t('Win'),
-    href: '/prediction',
-    icon: TrophyIcon,
-    fillIcon: TrophyFillIcon,
-    items: [
-      {
-        label: t('Trading Competition'),
-        href: '/competition',
-      },
-      {
-        label: t('Prediction (BETA)'),
-        href: '/prediction',
-      },
-      {
-        label: t('Lottery'),
-        href: '/lottery',
-      },
-    ],
-  },
+  
   {
     label: t('NFT'),
     href: `${nftsBaseUrl}`,
@@ -101,33 +40,12 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: '',
+    label: t('INFO'),
     href: '/info',
     icon: MoreIcon,
     hideSubNav: true,
     items: [
-      {
-        label: t('Info'),
-        href: '/info',
-      },
-      {
-        label: t('IFO'),
-        href: '/ifo',
-      },
-      {
-        label: t('Voting'),
-        href: '/voting',
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: t('Leaderboard'),
-        href: '/teams',
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
+      
       {
         label: t('Blog'),
         href: 'https://medium.com/pancakeswap',

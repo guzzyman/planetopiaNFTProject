@@ -18,8 +18,6 @@ const Stats = () => {
   const users = formatLocalisedCompactNumber(addressCount)
   const tvlString = tvl ? formatLocalisedCompactNumber(tvl) : '-'
 
-  const tvlText = t('And those users are now entrusting the platform with over $%tvl% in funds.', { tvl: tvlString })
-  const [entrusting, inFunds] = tvlText.split(tvlString)
 
   const UsersCardData: IconCardData = {
     icon: <CommunityIcon color="secondary" width="36px" />,
@@ -35,51 +33,20 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
       <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
-      </Heading>
-      <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('We all come from our own little planets.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
+        {t('That is all Planets exist in the solar syatem forever.')}
       </Text>
-      <Flex flexWrap="wrap">
-        <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {entrusting}
-          <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
-          {inFunds}
-        </Text>
-      </Flex>
-
+      <Text textAlign="center" color="textSubtle">
+        {t('Planetopia is one of the most decentralized platform on Conflux eSpace.')}
+      </Text>
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+        {t('Join us lets explore.')}
       </Text>
 
-      <Flex flexDirection={['column', null, null, 'row']}>
-        <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
-          <StatCardContent
-            headingText={t('%users% users', { users })}
-            bodyText={t('in the last 30 days')}
-            highlightColor={theme.colors.secondary}
-          />
-        </IconCard>
-        <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
-          <StatCardContent
-            headingText={t('%trades% trades', { trades })}
-            bodyText={t('made in the last 30 days')}
-            highlightColor={theme.colors.primary}
-          />
-        </IconCard>
-        <IconCard {...StakedCardData}>
-          <StatCardContent
-            headingText={t('$%tvl% staked', { tvl: tvlString })}
-            bodyText={t('Total Value Locked')}
-            highlightColor={theme.colors.failure}
-          />
-        </IconCard>
-      </Flex>
+  
     </Flex>
   )
 }

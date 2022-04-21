@@ -77,14 +77,14 @@ const Home = () => {
         <StyledHeaderInner>
           <div>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('NFT Market')}
+              {t('Planetopia MarketPlace')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on BNB Smart Chain')}
+              {t('Create,Buy and Sell NFTs on Conflux eSpace')}
             </Heading>
             {account && (
               <Button as={NextLinkFromReactRouter} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} mt="32px">
-                {t('Manage/Sell')}
+                {t('Create/Sell')}
               </Button>
             )}
           </div>
@@ -117,7 +117,6 @@ const Home = () => {
         </PageSection>
       )}
       <Gradient p="64px 0">
-        <SectionsWithFoldableText header={t('FAQs')} config={config(t)} m="auto" />
         <LinkExternal href="https://docs.pancakeswap.finance/contact-us/nft-market-applications" mx="auto" mt="16px">
           {t('Apply to NFT Market!')}
         </LinkExternal>

@@ -1,7 +1,6 @@
 import { useMemo } from 'react'
 import CompetitionBanner from '../CompetitionBanner'
 import IFOBanner from '../IFOBanner'
-import LotteryBanner from '../LotteryBanner'
 import useIsRenderIfoBanner from './useIsRenderIFOBanner'
 import useIsRenderLotteryBanner from './useIsRenderLotteryBanner'
 
@@ -27,10 +26,7 @@ export const useMultipleBannerConfig = () => {
           shouldRender: isRenderIFOBanner,
           banner: <IFOBanner />,
         },
-        {
-          shouldRender: isRenderLotteryBanner,
-          banner: <LotteryBanner />,
-        },
+       
         {
           shouldRender: false,
           banner: <CompetitionBanner />,

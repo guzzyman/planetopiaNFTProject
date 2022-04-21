@@ -6,7 +6,7 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/bunny@2x.png'
+import bunnyImage from '../../../../public/images/home/lunar-bunny/Astronaut.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -109,15 +109,18 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+            {t('Why is Mars scared of Jupiter?')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Because Jupiter Sat-urn Uranus')}
+          </Heading>
+          <Heading scale="md" mb="24px">
+            {t('Create, Mint, and Trade NFT on the most popular marketplace in the galaxy.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
-            <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+            <NextLinkFromReactRouter to="/nfts">
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade NFT')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>

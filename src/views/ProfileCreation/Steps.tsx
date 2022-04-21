@@ -30,10 +30,6 @@ const Steps = () => {
   }
 
   if (currentStep === 2) {
-    return <TeamSelection />
-  }
-
-  if (currentStep === 3) {
     return <UserName />
   }
 

@@ -22,7 +22,7 @@ it("renders correctly", () => {
     }
 
     .c0 a {
-      color: #1FC7D4;
+      color: #ff9d00;
     }
 
     .c0 a:hover {

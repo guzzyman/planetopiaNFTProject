@@ -56,7 +56,7 @@ function MyApp(props: AppProps) {
           name="description"
           content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#ff9d00" />
         <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.png" />
         <meta
           name="twitter:description"
@@ -64,7 +64,7 @@ function MyApp(props: AppProps) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="🥞 PancakeSwap - A next evolution DeFi exchange on BNB Smart Chain (BSC)" />
-        <title>PancakeSwap</title>
+        <title>Planetopia</title>
       </Head>
       <Providers store={store}>
         <Blocklist>

@@ -37,19 +37,18 @@ const Menu = (props) => {
       }}
       userMenu={<UserMenu />}
       globalMenu={<GlobalSettings />}
-      banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
       langs={languageList}
-      setLang={setLanguage}
-      cakePriceUsd={cakePriceUsd.toNumber()}
+      
+      
       links={menuItems}
       subLinks={activeMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
       footerLinks={footerLinks(t)}
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
-      buyCakeLabel={t('Buy CAKE')}
+
       {...props}
     />
   )
